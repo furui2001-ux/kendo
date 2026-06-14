@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
@@ -26,12 +26,41 @@ header {
   background: var(--nav);
   color: white;
   padding: 20px clamp(16px, 4vw, 32px) 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 h1 {
   margin: 0;
   font-size: clamp(21px, 4.5vw, 30px);
   line-height: 1.35;
   letter-spacing: 0;
+}
+.downloadAll,
+.clipDownload {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.downloadAll {
+  color: white;
+  border: 1px solid rgba(255,255,255,.55);
+  padding: 8px 13px;
+  background: rgba(255,255,255,.08);
+}
+.clipDownload {
+  margin-left: 8px;
+  color: var(--red);
+  border: 1px solid #d7b9bd;
+  padding: 4px 9px;
+  min-height: 32px;
+  background: #fff;
 }
 .tabs {
   display: flex;
@@ -146,11 +175,22 @@ figcaption {
     min-height: 40px;
     padding: 7px 12px;
   }
+  .downloadAll {
+    width: 100%;
+  }
+  .clipDownload {
+    display: flex;
+    margin: 8px 0 0;
+    width: 100%;
+  }
 }
 </style>
 </head>
 <body>
-<header><h1>剣道部 部員別アドバイス</h1></header>
+<header>
+  <h1>剣道部 部員別アドバイス</h1>
+  <a class="downloadAll" href="kendo_member_reports_mobile_email.zip" download>スマホ用ZIPをダウンロード</a>
+</header>
 <nav class="tabs" aria-label="部員選択"><button type='button' data-target='種村'>種村</button><button type='button' data-target='本間'>本間</button><button type='button' data-target='三村'>三村</button><button type='button' data-target='村上'>村上</button><button type='button' data-target='佐藤'>佐藤</button><button type='button' data-target='永澤'>永澤</button><button type='button' data-target='清水'>清水</button><button type='button' data-target='中野'>中野</button><button type='button' data-target='大賀'>大賀</button><button type='button' data-target='西村'>西村</button><button type='button' data-target='山田'>山田</button></nav>
 <main>
     <section class="member" id="種村">
@@ -165,21 +205,21 @@ figcaption {
         </article>
         <article>
           <h3>良い点</h3>
-          <p>良いGIFでは、赤タスキが相手を正面に置いたまま前へ圧をかけ、近間でも気持ちを切らしていない。中心を外さず押し込めるのは試合で強い武器。</p>
+          <p>相手を正面に置いたまま前へ圧をかけ、近間でも気持ちを切らしていない。中心を外さず押し込めるのは試合で強い武器。</p>
         </article>
         <article>
           <h3>改善点</h3>
-          <p>改善GIFでは、打突後や鍔迫り合い後に次の選択が少し遅れる。一本を取り切るには、面に出る、引き技に変える、すぐ中段に戻す、のどれかを早く決める。</p>
+          <p>打突後や鍔迫り合い後に次の選択が少し遅れる。一本を取り切るには、面に出る、引き技に変える、すぐ中段に戻す、のどれかを早く決める。</p>
         </article>
       </div>
       <div class="clips" aria-label="種村の確認動画">
         <figure>
-          <img src="assets/種村_good.gif" alt="種村 良い点の確認GIF">
-          <figcaption>良い点を見る場面</figcaption>
+          <img src="assert/種村_good.gif" alt="種村 良い点の確認GIF">
+          <figcaption>良い点を見る場面 <a class="clipDownload" href="assert/種村_good.gif" download>GIF保存</a></figcaption>
         </figure>
         <figure>
-          <img src="assets/種村_fix.gif" alt="種村 改善点の確認GIF">
-          <figcaption>改善点を見る場面</figcaption>
+          <img src="assert/種村_fix.gif" alt="種村 改善点の確認GIF">
+          <figcaption>改善点を見る場面 <a class="clipDownload" href="assert/種村_fix.gif" download>GIF保存</a></figcaption>
         </figure>
       </div>
     </section>
@@ -196,21 +236,21 @@ figcaption {
         </article>
         <article>
           <h3>良い点</h3>
-          <p>良いGIFでは、相手の圧に対して姿勢を崩さず、竹刀を残して試合を作れている。落ち着いて相手を見られる点は大きな長所。</p>
+          <p>相手の圧に対して姿勢を崩さず、竹刀を残して試合を作れている。落ち着いて相手を見られる点は大きな長所。</p>
         </article>
         <article>
           <h3>改善点</h3>
-          <p>改善GIFでは、下がる動きが続きやすく、相手に主導権を渡す時間がある。受けた後は半歩横へ外して面・小手、または体を残して返し胴を準備したい。</p>
+          <p>下がる動きが続きやすく、相手に主導権を渡す時間がある。受けた後は半歩横へ外して面・小手、または体を残して返し胴を準備したい。</p>
         </article>
       </div>
       <div class="clips" aria-label="本間の確認動画">
         <figure>
-          <img src="assets/本間_good.gif" alt="本間 良い点の確認GIF">
-          <figcaption>良い点を見る場面</figcaption>
+          <img src="assert/本間_good.gif" alt="本間 良い点の確認GIF">
+          <figcaption>良い点を見る場面 <a class="clipDownload" href="assert/本間_good.gif" download>GIF保存</a></figcaption>
         </figure>
         <figure>
-          <img src="assets/本間_fix.gif" alt="本間 改善点の確認GIF">
-          <figcaption>改善点を見る場面</figcaption>
+          <img src="assert/本間_fix.gif" alt="本間 改善点の確認GIF">
+          <figcaption>改善点を見る場面 <a class="clipDownload" href="assert/本間_fix.gif" download>GIF保存</a></figcaption>
         </figure>
       </div>
     </section>
@@ -227,21 +267,21 @@ figcaption {
         </article>
         <article>
           <h3>良い点</h3>
-          <p>良いGIFでは、赤タスキが中段を保ちながら間を詰め、相手を下げさせる圧を作れている。前へ出る意志が見える場面なので、この入り方を増やしたい。</p>
+          <p>赤タスキが中段を保ちながら間を詰め、相手を下げさせる圧を作れている。前へ出る意志が見える場面なので、この入り方を増やしたい。</p>
         </article>
         <article>
           <h3>改善点</h3>
-          <p>改善GIFでは、遠間で探る時間が長く、打つ前に相手へ準備時間を与えている。剣先で中心を押さえたら、小手か面の第一候補を決めて一拍早く出る。</p>
+          <p>遠間で探る時間が長く、打つ前に相手へ準備時間を与えている。剣先で中心を押さえたら、小手か面の第一候補を決めて一拍早く出る。</p>
         </article>
       </div>
       <div class="clips" aria-label="三村の確認動画">
         <figure>
-          <img src="assets/三村_good.gif" alt="三村 良い点の確認GIF">
-          <figcaption>良い点を見る場面</figcaption>
+          <img src="assert/三村_good.gif" alt="三村 良い点の確認GIF">
+          <figcaption>良い点を見る場面 <a class="clipDownload" href="assert/三村_good.gif" download>GIF保存</a></figcaption>
         </figure>
         <figure>
-          <img src="assets/三村_fix.gif" alt="三村 改善点の確認GIF">
-          <figcaption>改善点を見る場面</figcaption>
+          <img src="assert/三村_fix.gif" alt="三村 改善点の確認GIF">
+          <figcaption>改善点を見る場面 <a class="clipDownload" href="assert/三村_fix.gif" download>GIF保存</a></figcaption>
         </figure>
       </div>
     </section>
@@ -258,21 +298,21 @@ figcaption {
         </article>
         <article>
           <h3>良い点</h3>
-          <p>良いGIFでは、赤タスキが近い間合いでも姿勢を保ち、相手の動きを見ながら前で勝負できている。試合の圧を自分で作れるのが良い。</p>
+          <p>赤タスキが近い間合いでも姿勢を保ち、相手の動きを見ながら前で勝負できている。試合の圧を自分で作れるのが良い。</p>
         </article>
         <article>
           <h3>改善点</h3>
-          <p>改善GIFでは、攻め込んだ後に見合う時間が出て、相手に立て直されている。入ったら面、小手、押して引き技までを一続きにして、流れを切らない。</p>
+          <p>攻め込んだ後に見合う時間が出て、相手に立て直されている。入ったら面、小手、押して引き技までを一続きにして、流れを切らない。</p>
         </article>
       </div>
       <div class="clips" aria-label="村上の確認動画">
         <figure>
-          <img src="assets/村上_good.gif" alt="村上 良い点の確認GIF">
-          <figcaption>良い点を見る場面</figcaption>
+          <img src="assert/村上_good.gif" alt="村上 良い点の確認GIF">
+          <figcaption>良い点を見る場面 <a class="clipDownload" href="assert/村上_good.gif" download>GIF保存</a></figcaption>
         </figure>
         <figure>
-          <img src="assets/村上_fix.gif" alt="村上 改善点の確認GIF">
-          <figcaption>改善点を見る場面</figcaption>
+          <img src="assert/村上_fix.gif" alt="村上 改善点の確認GIF">
+          <figcaption>改善点を見る場面 <a class="clipDownload" href="assert/村上_fix.gif" download>GIF保存</a></figcaption>
         </figure>
       </div>
     </section>
@@ -289,21 +329,21 @@ figcaption {
         </article>
         <article>
           <h3>良い点</h3>
-          <p>良いGIFでは、赤タスキが前へ出る姿勢を持ち、相手に圧を返している。攻め返す気持ちがあるため、主導権を奪い返せる場面がある。</p>
+          <p>赤タスキが前へ出る姿勢を持ち、相手に圧を返している。攻め返す気持ちがあるため、主導権を奪い返せる場面がある。</p>
         </article>
         <article>
           <h3>改善点</h3>
-          <p>改善GIFでは、近間で手元が上がりやすく、相手に打ち出しを読まれる危険がある。左足の引き付けを早くして、剣先を外さず小さく鋭く打つ。</p>
+          <p>近間で手元が上がりやすく、相手に打ち出しを読まれる危険がある。左足の引き付けを早くして、剣先を外さず小さく鋭く打つ。</p>
         </article>
       </div>
       <div class="clips" aria-label="佐藤の確認動画">
         <figure>
-          <img src="assets/佐藤_good.gif" alt="佐藤 良い点の確認GIF">
-          <figcaption>良い点を見る場面</figcaption>
+          <img src="assert/佐藤_good.gif" alt="佐藤 良い点の確認GIF">
+          <figcaption>良い点を見る場面 <a class="clipDownload" href="assert/佐藤_good.gif" download>GIF保存</a></figcaption>
         </figure>
         <figure>
-          <img src="assets/佐藤_fix.gif" alt="佐藤 改善点の確認GIF">
-          <figcaption>改善点を見る場面</figcaption>
+          <img src="assert/佐藤_fix.gif" alt="佐藤 改善点の確認GIF">
+          <figcaption>改善点を見る場面 <a class="clipDownload" href="assert/佐藤_fix.gif" download>GIF保存</a></figcaption>
         </figure>
       </div>
     </section>
@@ -320,21 +360,21 @@ figcaption {
         </article>
         <article>
           <h3>良い点</h3>
-          <p>良いGIFでは、赤タスキが姿勢を保って相手を見られており、崩されにくい。落ち着いて間合いを作れる点は試合で安定感につながる。</p>
+          <p>赤タスキが姿勢を保って相手を見られており、崩されにくい。落ち着いて間合いを作れる点は試合で安定感につながる。</p>
         </article>
         <article>
           <h3>改善点</h3>
-          <p>改善GIFでは、打った後に一瞬止まり、旗が上がりにくい印象になる。打突後は声、体の抜け、振り返りの中段までを強く見せること。</p>
+          <p>打った後に一瞬止まり、旗が上がりにくい印象になる。打突後は声、体の抜け、振り返りの中段までを強く見せること。</p>
         </article>
       </div>
       <div class="clips" aria-label="永澤の確認動画">
         <figure>
-          <img src="assets/永澤_good.gif" alt="永澤 良い点の確認GIF">
-          <figcaption>良い点を見る場面</figcaption>
+          <img src="assert/永澤_good.gif" alt="永澤 良い点の確認GIF">
+          <figcaption>良い点を見る場面 <a class="clipDownload" href="assert/永澤_good.gif" download>GIF保存</a></figcaption>
         </figure>
         <figure>
-          <img src="assets/永澤_fix.gif" alt="永澤 改善点の確認GIF">
-          <figcaption>改善点を見る場面</figcaption>
+          <img src="assert/永澤_fix.gif" alt="永澤 改善点の確認GIF">
+          <figcaption>改善点を見る場面 <a class="clipDownload" href="assert/永澤_fix.gif" download>GIF保存</a></figcaption>
         </figure>
       </div>
     </section>
@@ -351,21 +391,21 @@ figcaption {
         </article>
         <article>
           <h3>良い点</h3>
-          <p>良いGIFでは、赤タスキが相手の動きをよく見て、無理に崩れず試合を続けられている。相手を観察する力はある。</p>
+          <p>赤タスキが相手の動きをよく見て、無理に崩れず試合を続けられている。相手を観察する力はある。</p>
         </article>
         <article>
           <h3>改善点</h3>
-          <p>改善GIFでは、見ている時間が長くなると相手に先を取られやすい。相手の右足が入った瞬間に小手、止まった瞬間に面、という反応を稽古で固定したい。</p>
+          <p>見ている時間が長くなると相手に先を取られやすい。相手の右足が入った瞬間に小手、止まった瞬間に面、という反応を稽古で固定したい。</p>
         </article>
       </div>
       <div class="clips" aria-label="清水の確認動画">
         <figure>
-          <img src="assets/清水_good.gif" alt="清水 良い点の確認GIF">
-          <figcaption>良い点を見る場面</figcaption>
+          <img src="assert/清水_good.gif" alt="清水 良い点の確認GIF">
+          <figcaption>良い点を見る場面 <a class="clipDownload" href="assert/清水_good.gif" download>GIF保存</a></figcaption>
         </figure>
         <figure>
-          <img src="assets/清水_fix.gif" alt="清水 改善点の確認GIF">
-          <figcaption>改善点を見る場面</figcaption>
+          <img src="assert/清水_fix.gif" alt="清水 改善点の確認GIF">
+          <figcaption>改善点を見る場面 <a class="clipDownload" href="assert/清水_fix.gif" download>GIF保存</a></figcaption>
         </figure>
       </div>
     </section>
@@ -382,21 +422,21 @@ figcaption {
         </article>
         <article>
           <h3>良い点</h3>
-          <p>良いGIFでは、赤タスキが足を使って位置を取り直し、相手との間合いを調整できている。試合中に場を作り直せる点は良い。</p>
+          <p>赤タスキが足を使って位置を取り直し、相手との間合いを調整できている。試合中に場を作り直せる点は良い。</p>
         </article>
         <article>
           <h3>改善点</h3>
-          <p>改善GIFでは、入り方が同じリズムになると相手に合わせられる。小さく誘って相手を出させる、止まった瞬間に面へ出るなど、拍子を変えたい。</p>
+          <p>入り方が同じリズムになると相手に合わせられる。小さく誘って相手を出させる、止まった瞬間に面へ出るなど、拍子を変えたい。</p>
         </article>
       </div>
       <div class="clips" aria-label="中野の確認動画">
         <figure>
-          <img src="assets/中野_good.gif" alt="中野 良い点の確認GIF">
-          <figcaption>良い点を見る場面</figcaption>
+          <img src="assert/中野_good.gif" alt="中野 良い点の確認GIF">
+          <figcaption>良い点を見る場面 <a class="clipDownload" href="assert/中野_good.gif" download>GIF保存</a></figcaption>
         </figure>
         <figure>
-          <img src="assets/中野_fix.gif" alt="中野 改善点の確認GIF">
-          <figcaption>改善点を見る場面</figcaption>
+          <img src="assert/中野_fix.gif" alt="中野 改善点の確認GIF">
+          <figcaption>改善点を見る場面 <a class="clipDownload" href="assert/中野_fix.gif" download>GIF保存</a></figcaption>
         </figure>
       </div>
     </section>
@@ -413,21 +453,21 @@ figcaption {
         </article>
         <article>
           <h3>良い点</h3>
-          <p>良いGIFでは、赤タスキが前へ出る力を見せ、一本を取りに行く姿勢がはっきりしている。気持ちで押せるのは大きな長所。</p>
+          <p>赤タスキが前へ出る力を見せ、一本を取りに行く姿勢がはっきりしている。気持ちで押せるのは大きな長所。</p>
         </article>
         <article>
           <h3>改善点</h3>
-          <p>改善GIFでは、距離が少し遠いまま打ちに行き、竹刀の圧が相手に十分かかる前に体が出ている。剣先で相手の中心を押さえてから半歩入る。</p>
+          <p>距離が少し遠いまま打ちに行き、竹刀の圧が相手に十分かかる前に体が出ている。剣先で相手の中心を押さえてから半歩入る。</p>
         </article>
       </div>
       <div class="clips" aria-label="大賀の確認動画">
         <figure>
-          <img src="assets/大賀_good.gif" alt="大賀 良い点の確認GIF">
-          <figcaption>良い点を見る場面</figcaption>
+          <img src="assert/大賀_good.gif" alt="大賀 良い点の確認GIF">
+          <figcaption>良い点を見る場面 <a class="clipDownload" href="assert/大賀_good.gif" download>GIF保存</a></figcaption>
         </figure>
         <figure>
-          <img src="assets/大賀_fix.gif" alt="大賀 改善点の確認GIF">
-          <figcaption>改善点を見る場面</figcaption>
+          <img src="assert/大賀_fix.gif" alt="大賀 改善点の確認GIF">
+          <figcaption>改善点を見る場面 <a class="clipDownload" href="assert/大賀_fix.gif" download>GIF保存</a></figcaption>
         </figure>
       </div>
     </section>
@@ -444,21 +484,21 @@ figcaption {
         </article>
         <article>
           <h3>良い点</h3>
-          <p>良いGIFでは、赤タスキが接近しても気持ちを切らさず、前で勝負できている。相手とぶつかる場面で逃げないのは良い。</p>
+          <p>赤タスキが接近しても気持ちを切らさず、前で勝負できている。相手とぶつかる場面で逃げないのは良い。</p>
         </article>
         <article>
           <h3>改善点</h3>
-          <p>改善GIFでは、手元の動きが大きい場面があり、相手に打ち出しを読まれやすい。左拳を体の中心から外さず、振りかぶりを小さくして出ばなを取る。</p>
+          <p>手元の動きが大きい場面があり、相手に打ち出しを読まれやすい。左拳を体の中心から外さず、振りかぶりを小さくして出ばなを取る。</p>
         </article>
       </div>
       <div class="clips" aria-label="西村の確認動画">
         <figure>
-          <img src="assets/西村_good.gif" alt="西村 良い点の確認GIF">
-          <figcaption>良い点を見る場面</figcaption>
+          <img src="assert/西村_good.gif" alt="西村 良い点の確認GIF">
+          <figcaption>良い点を見る場面 <a class="clipDownload" href="assert/西村_good.gif" download>GIF保存</a></figcaption>
         </figure>
         <figure>
-          <img src="assets/西村_fix.gif" alt="西村 改善点の確認GIF">
-          <figcaption>改善点を見る場面</figcaption>
+          <img src="assert/西村_fix.gif" alt="西村 改善点の確認GIF">
+          <figcaption>改善点を見る場面 <a class="clipDownload" href="assert/西村_fix.gif" download>GIF保存</a></figcaption>
         </figure>
       </div>
     </section>
@@ -475,21 +515,21 @@ figcaption {
         </article>
         <article>
           <h3>良い点</h3>
-          <p>良いGIFでは、赤タスキが近い間合いでも押し負けず、相手との競り合いに入れている。前で勝負する気持ちは十分ある。</p>
+          <p>赤タスキが近い間合いでも押し負けず、相手との競り合いに入れている。前で勝負する気持ちは十分ある。</p>
         </article>
         <article>
           <h3>改善点</h3>
-          <p>改善GIFでは、離れ際に体勢が乱れると追い込みを受けやすい。体を先に作ってから離れ、引き面・引き胴・すぐ中段復帰の形を徹底したい。</p>
+          <p>離れ際に体勢が乱れると追い込みを受けやすい。体を先に作ってから離れ、引き面・引き胴・すぐ中段復帰の形を徹底したい。</p>
         </article>
       </div>
       <div class="clips" aria-label="山田の確認動画">
         <figure>
-          <img src="assets/山田_good.gif" alt="山田 良い点の確認GIF">
-          <figcaption>良い点を見る場面</figcaption>
+          <img src="assert/山田_good.gif" alt="山田 良い点の確認GIF">
+          <figcaption>良い点を見る場面 <a class="clipDownload" href="assert/山田_good.gif" download>GIF保存</a></figcaption>
         </figure>
         <figure>
-          <img src="assets/山田_fix.gif" alt="山田 改善点の確認GIF">
-          <figcaption>改善点を見る場面</figcaption>
+          <img src="assert/山田_fix.gif" alt="山田 改善点の確認GIF">
+          <figcaption>改善点を見る場面 <a class="clipDownload" href="assert/山田_fix.gif" download>GIF保存</a></figcaption>
         </figure>
       </div>
     </section>
