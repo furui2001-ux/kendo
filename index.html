@@ -241,16 +241,42 @@ function sceneRange(member, kind) {
   return `${start.toFixed(1)}秒 - ${end.toFixed(1)}秒`;
 }
 
-function videoFigure(member, kind, label) {
+function clipType(src) {
+  return src.toLowerCase().endsWith(".mov") ? "video/quicktime" : "video/mp4";
+}
+
+function clipRange(clip) {
+  if (typeof clip.start !== "number" || typeof clip.end !== "number") return "";
+  return `${clip.start.toFixed(1)}秒 - ${clip.end.toFixed(1)}秒`;
+}
+
+function clipSrc(clip) {
+  const range = clipRange(clip);
+  return range ? `${clip.video}#t=${clip.start},${clip.end}` : clip.video;
+}
+
+function memberClips(member, kind) {
+  const clips = member[`${kind}Clips`];
+  if (Array.isArray(clips) && clips.length) return clips;
   const src = member[`${kind}Video`];
-  const range = sceneRange(member, kind);
+  if (!src) return [];
+  return [{
+    video: src,
+    start: member[`${kind}SceneStart`],
+    end: member[`${kind}SceneEnd`]
+  }];
+}
+
+function videoFigure(clip, label, index) {
+  const range = clipRange(clip);
+  const caption = index > 1 ? `${label} ${index}` : label;
   return `
     <figure>
       <video controls loop muted playsinline preload="metadata">
-        <source src="${escapeHtml(src)}" type="video/mp4">
+        <source src="${escapeHtml(clipSrc(clip))}" type="${escapeHtml(clipType(clip.video))}">
         お使いのブラウザでは動画を再生できません。
       </video>
-      <figcaption>${label}${range ? ` <span>(${escapeHtml(range)})</span>` : ""}</figcaption>
+      <figcaption>${escapeHtml(caption)}${range ? ` <span>(${escapeHtml(range)})</span>` : ""}${clip.note ? ` - ${escapeHtml(clip.note)}` : ""}</figcaption>
     </figure>
   `;
 }
@@ -274,6 +300,20 @@ function renderMember(member) {
     </div>
   `).join("");
   const training = (member.training || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+  const comparison = member.comparison ? `
+        <article>
+          <h3>前回（6/13）との比較</h3>
+          <p>${escapeHtml(member.comparison)}</p>
+        </article>
+  ` : "";
+  const ipponAnalysis = member.ipponAnalysis ? `
+        <article>
+          <h3>打突分析</h3>
+          <p>${escapeHtml(member.ipponAnalysis)}</p>
+        </article>
+  ` : "";
+  const goodClips = memberClips(member, "good").map((clip, index) => videoFigure(clip, "良い点を見る場面", index + 1)).join("");
+  const improveClips = memberClips(member, "improve").map((clip, index) => videoFigure(clip, "改善点を見る場面", index + 1)).join("");
   app.innerHTML = `
     <section class="member" id="${escapeHtml(member.name)}">
       <div class="memberHeader">
@@ -296,11 +336,13 @@ function renderMember(member) {
           <h3>改善点</h3>
           <p>${escapeHtml(member.improve)}</p>
         </article>
+        ${comparison}
+        ${ipponAnalysis}
       </div>
       <div class="scores" aria-label="${escapeHtml(member.name)}の評価">${scores}</div>
       <div class="clips" aria-label="${escapeHtml(member.name)}の確認動画">
-        ${videoFigure(member, "good", "良い点を見る場面")}
-        ${videoFigure(member, "improve", "改善点を見る場面")}
+        ${goodClips}
+        ${improveClips}
       </div>
       <section class="training" aria-label="${escapeHtml(member.name)}の練習メニュー">
         <h3>次の練習メニュー</h3>
