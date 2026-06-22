@@ -311,7 +311,7 @@ function renderMember(member) {
   const training = (member.training || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
   const comparison = member.comparison ? `
         <article>
-          <h3>前回（6/13）との比較</h3>
+          <h3>前回との比較</h3>
           <p>${escapeHtml(member.comparison)}</p>
         </article>
   ` : "";
