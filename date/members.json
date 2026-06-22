@@ -1,0 +1,500 @@
+[
+  {
+    "name": "種村",
+    "tasuki": "赤タスキ",
+    "matchDate": "2026-06-13",
+    "priority": "中心を取りに行く姿勢を保ちながら、間合いが詰まった瞬間に迷わず一本へつなげる。",
+    "scores": {
+      "攻め": 3,
+      "間合い": 3,
+      "打突機会": 3,
+      "打突の強さ": 3,
+      "残心": 3,
+      "積極性": 4
+    },
+    "good": "前へ圧をかける意識があり、相手を正面に置いたまま攻め合いを作れている。打つ前の気持ちが切れにくい点は試合で強みになる。",
+    "improve": "間合いが近くなった後に一拍迷う場面がある。中心を取ったら面か小手の第一候補を決め、打突後はすぐ残心まで見せたい。",
+    "training": [
+      "中心を押さえてから出ばな面を打つ練習",
+      "近間で止まらず小手・面を選ぶ練習",
+      "打突後に抜けて中段へ戻る練習"
+    ],
+    "goodVideo": "clips/種村_good.mp4",
+    "improveVideo": "clips/種村_improve.mp4",
+    "goodSceneStart": 35,
+    "goodSceneEnd": 49,
+    "improveSceneStart": 96,
+    "improveSceneEnd": 111,
+    "sourceVideo": "種村①.MOV"
+  },
+  {
+    "name": "本間",
+    "tasuki": "赤タスキ",
+    "matchDate": "2026-06-22",
+    "priority": "近間で受けた後に止まらず、返し技・引き技・離れ際の打突まで連続させる。",
+    "scores": {
+      "攻め": 3,
+      "間合い": 3,
+      "打突機会": 3,
+      "打突の強さ": 3,
+      "残心": 3,
+      "積極性": 4
+    },
+    "good": "前へ出る意欲があり、相手の構え直しや足の止まりを見て打突へ入る場面がある。打突の強度も出ており、一本に近い攻め方がある。",
+    "improve": "近間で受けた後に動きが止まると、相手へ次の機会を渡してしまう。打突が当たっても、体の抜けと残心が弱いと一本として成立しにくい。",
+    "comparison": "6月19日は面へ入り切る積極性が増えた一方、近間で止まることが課題だった。6月22日も前へ出る姿勢と打突の強度は維持できているが、受けた後や鍔迫り合い付近で次の技へ移る速さはまだ不足している。良くなった点は攻め続ける気持ち、継続課題は打突後の抜けと残心。",
+    "ipponAnalysis": "打突機会は、相手が構え直す瞬間、足が止まった瞬間、近間から離れる瞬間にある。一本に近い打突は、声と踏み込みがそろい、物打で面または小手を捉え、打った後に体が前へ抜ける時。一本にならない理由は、打突部位に当たっても体勢が残らない、近間で竹刀の打突部ではなく元に近い部分で触れる、打った後に止まって残心が見えないこと。強く当てるだけでなく、正しい機会と刃筋、残心までをそろえたい。",
+    "training": [
+      "鍔迫り合いから一歩で離れて面または小手を打つ練習",
+      "受けた直後に返し胴・返し面へつなげる練習",
+      "打突後に前へ抜けて残心を明確にする練習"
+    ],
+    "goodVideo": "clips/cutouts/20260622_honma_good_1.mp4",
+    "improveVideo": "clips/cutouts/20260622_honma_improve_1.mp4",
+    "goodSceneStart": 80,
+    "goodSceneEnd": 95,
+    "improveSceneStart": 155,
+    "improveSceneEnd": 170,
+    "goodClips": [
+      {
+        "src": "clips/cutouts/20260622_honma_good_1.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 80,
+        "sourceEnd": 95,
+        "note": "相手の止まりを見て前へ入り、気勢と踏み込みがそろいやすい場面。"
+      },
+      {
+        "src": "clips/cutouts/20260622_honma_good_2.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 220,
+        "sourceEnd": 235,
+        "note": "試合後半でも攻めを継続し、打突機会を作れている。"
+      }
+    ],
+    "improveClips": [
+      {
+        "src": "clips/cutouts/20260622_honma_improve_1.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 155,
+        "sourceEnd": 170,
+        "note": "近間で受けた後に次の技が遅れ、機会を逃している。"
+      },
+      {
+        "src": "clips/cutouts/20260622_honma_improve_2.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 240,
+        "sourceEnd": 255,
+        "note": "終盤に体勢と残心が弱くなり、当たっても一本として見えにくい。"
+      }
+    ],
+    "sourceVideo": "videos/20260622_本間_赤.MP4"
+  },
+  {
+    "name": "三村",
+    "tasuki": "赤タスキ",
+    "matchDate": "2026-06-22",
+    "priority": "中心を押さえた瞬間に一拍早く打突へ移り、打った後の抜けと残心まで見せ切る。",
+    "scores": {
+      "攻め": 3,
+      "間合い": 3,
+      "打突機会": 3,
+      "打突の強さ": 3,
+      "残心": 3,
+      "積極性": 3
+    },
+    "good": "中段を崩さずに前へ圧をかけ、相手を下げながら面へ入る形が出ている。剣先で中心を探るだけで終わらず、機会を見て前へ出る意識が見える。",
+    "improve": "攻め合いで足が止まる時間や、近間で受けた後に次の打突へつながらない場面がある。当たっても体勢と残心が続かないと一本として見えにくい。",
+    "training": [
+      "半歩攻めて相手が止まった瞬間に面へ出る練習",
+      "受けた直後に返し技または引き技へつなげる練習",
+      "打突後に前へ抜けて中段へ戻る残心確認"
+    ],
+    "goodVideo": "clips/cutouts/20260622_mimura_good_1.mp4",
+    "improveVideo": "clips/cutouts/20260622_mimura_improve_1.mp4",
+    "goodSceneStart": 100,
+    "goodSceneEnd": 115,
+    "improveSceneStart": 135,
+    "improveSceneEnd": 150,
+    "sourceVideo": "videos/20260622_三村_赤.MP4",
+    "goodClips": [
+      {
+        "src": "clips/cutouts/20260622_mimura_good_1.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 100,
+        "sourceEnd": 115,
+        "note": "相手を下げながら前へ入り、面を狙う攻めの形が出ている。"
+      },
+      {
+        "src": "clips/cutouts/20260622_mimura_good_2.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 150,
+        "sourceEnd": 165,
+        "note": "間合いを詰めた後に打突へ移る判断が比較的早い。"
+      }
+    ],
+    "improveClips": [
+      {
+        "src": "clips/cutouts/20260622_mimura_improve_1.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 135,
+        "sourceEnd": 150,
+        "note": "近間で動きが止まり、受けた後の返しや離れ際の打突が遅れる。"
+      },
+      {
+        "src": "clips/cutouts/20260622_mimura_improve_2.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 205,
+        "sourceEnd": 220,
+        "note": "打突後の抜けと残心が弱く、当たっても有効打突として見せ切れていない。"
+      }
+    ],
+    "comparison": "6月6日は遠間で見合う時間が長く、攻めを打突に変えるまでに間があった。6月22日は前へ入る場面が増え、中心を取りに行く意識は良くなっている。一方で近間で止まる癖と、打突後の残心が弱くなる点は継続課題。",
+    "ipponAnalysis": "打突機会は、相手の足が止まった瞬間や構え直しの直後に作れている。一本に近い場面は、気勢を出して前へ入り、竹刀の打突部で面を捉え、踏み込みと体の移動がそろう時。一本になりにくい場面は、打突前に迷いが出て相手に受ける時間を与える時と、当たった後に体勢が止まり残心まで続かない時。強度だけでなく、左足の引き付けと打突後の前進をそろえることが必要。"
+  },
+  {
+    "name": "村上",
+    "tasuki": "赤タスキ",
+    "matchDate": "2026-06-22",
+    "priority": "中心を外さずに攻め、打突後の抜けと振り返りまで一本として見せる。",
+    "scores": {
+      "攻め": 3,
+      "間合い": 3,
+      "打突機会": 4,
+      "打突の強さ": 3,
+      "残心": 3,
+      "積極性": 4
+    },
+    "good": "打突機会を作る意識が高く、相手の入り際や足の止まりに合わせて前へ出る場面がある。赤タスキ側として攻めの主導権を取りに行けている。",
+    "improve": "打突時に中心線から少し外れる場面や、打った後に体が止まる場面がある。一本にするには、当てた後の姿勢と残心をもっと明確にしたい。",
+    "comparison": "6月19日は前へ出る意識と打突機会の作り方が良くなっていた。6月22日もその積極性は継続できており、相手の入り際に勝負する場面がある。一方で中心の外れと打突後の残心はまだ課題で、当てた後に一本として見せ切る力を上げたい。",
+    "ipponAnalysis": "打突機会は、相手の足が止まる瞬間、入り際、構え直しの直後に作れている。一本に近い場面は、攻めで相手を動かし、体と竹刀の方向がそろって前へ抜ける時。一本にならない理由は、剣先の中心が外れて刃筋が通りにくいこと、踏み込みと打突が少しずれること、打突後に残心が弱く見えること。強度はあるので、半歩攻めて中心を取ってから小さく鋭く打つことが有効。",
+    "training": [
+      "中心を取ってから小さく面へ出る練習",
+      "相手の入り際に出ばな面・出ばな小手を打つ練習",
+      "打突後に抜けて中段に戻る残心練習"
+    ],
+    "goodVideo": "clips/cutouts/20260622_murakami_good_1.mp4",
+    "improveVideo": "clips/cutouts/20260622_murakami_improve_1.mp4",
+    "goodSceneStart": 60,
+    "goodSceneEnd": 75,
+    "improveSceneStart": 95,
+    "improveSceneEnd": 110,
+    "goodClips": [
+      {
+        "src": "clips/cutouts/20260622_murakami_good_1.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 60,
+        "sourceEnd": 75,
+        "note": "相手の入り際に合わせて前へ出る判断が良い。"
+      },
+      {
+        "src": "clips/cutouts/20260622_murakami_good_2.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 190,
+        "sourceEnd": 205,
+        "note": "後半も攻めを切らさず、打突機会を作れている。"
+      }
+    ],
+    "improveClips": [
+      {
+        "src": "clips/cutouts/20260622_murakami_improve_1.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 95,
+        "sourceEnd": 110,
+        "note": "打突後の抜けと残心が弱く、当たっても一本として示し切れていない。"
+      },
+      {
+        "src": "clips/cutouts/20260622_murakami_improve_2.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 220,
+        "sourceEnd": 235,
+        "note": "中心が外れたまま打つと、打突部位に触れても有効打突になりにくい。"
+      }
+    ],
+    "sourceVideo": "videos/20260622_村上_赤.MP4"
+  },
+  {
+    "name": "佐藤",
+    "tasuki": "赤タスキ",
+    "matchDate": "2026-06-22",
+    "priority": "打つ前に手元を上げすぎず、中心を取った小さい打突から残心までつなげる。",
+    "scores": {
+      "攻め": 3,
+      "間合い": 3,
+      "打突機会": 3,
+      "打突の強さ": 3,
+      "残心": 3,
+      "積極性": 3
+    },
+    "good": "前へ出る気持ちはあり、相手が止まったところへ打ち込む場面がある。攻めてから打つ流れは前回より見えやすい。",
+    "improve": "打つ前に手元が上がる、または打突後に体が流れて残心が曖昧になる場面がある。大きく当てるだけでは一本になりにくい。",
+    "training": [
+      "小さく鋭い面打ちで左手を中心に残す練習",
+      "打突後に前へ抜けて振り返る残心練習",
+      "相手の起こりを見て小手または面へ出る反応練習"
+    ],
+    "goodVideo": "clips/cutouts/20260622_sato_good_1.mp4",
+    "improveVideo": "clips/cutouts/20260622_sato_improve_1.mp4",
+    "goodSceneStart": 45,
+    "goodSceneEnd": 60,
+    "improveSceneStart": 20,
+    "improveSceneEnd": 35,
+    "sourceVideo": "videos/20260622_佐藤_赤.MP4",
+    "goodClips": [
+      {
+        "src": "clips/cutouts/20260622_sato_good_1.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 45,
+        "sourceEnd": 60,
+        "note": "相手が止まるタイミングに合わせて前へ出る判断が良い。"
+      },
+      {
+        "src": "clips/cutouts/20260622_sato_good_2.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 100,
+        "sourceEnd": 115,
+        "note": "攻めて相手を動かし、打突機会を作ろうとしている。"
+      }
+    ],
+    "improveClips": [
+      {
+        "src": "clips/cutouts/20260622_sato_improve_1.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 20,
+        "sourceEnd": 35,
+        "note": "打つ前の手元の浮きと姿勢の乱れで、打突の方向が一本として見えにくい。"
+      },
+      {
+        "src": "clips/cutouts/20260622_sato_improve_2.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 120,
+        "sourceEnd": 135,
+        "note": "打突後の継続と残心が弱く、当たっても評価されにくい。"
+      }
+    ],
+    "comparison": "6月13日は前へ出る積極性はあったが、打突後の体勢と残心が課題だった。6月22日は攻めてから打つ場面が増え、機会を作る意識は良くなっている。ただし手元が上がる大きな動作と、打突後に体が流れる点はまだ残っている。",
+    "ipponAnalysis": "打突機会は、相手が下がる瞬間や構えが浮いた瞬間にある。一本になるには、気勢、正しい打突部位、竹刀の物打、踏み込み、体勢、残心が一つにまとまる必要がある。佐藤は当てる力はあるが、手元が先に上がると刃筋と中心が外れ、相手に防御されやすい。打突後に中段へ戻る姿勢が曖昧な場面も、一本にならない理由になる。"
+  },
+  {
+    "name": "永澤",
+    "tasuki": "赤タスキ",
+    "matchDate": "2026-06-22",
+    "priority": "安定した中段から機会を逃さず打ち、二の太刀と残心まで途切れさせない。",
+    "scores": {
+      "攻め": 3,
+      "間合い": 3,
+      "打突機会": 3,
+      "打突の強さ": 3,
+      "残心": 3,
+      "積極性": 3
+    },
+    "good": "中段の構えと間合いが比較的安定しており、前へ入る準備ができている。相手が止まったところへ打突を狙う場面がある。",
+    "improve": "一度目の打突で終わり、次の技や残心へつながらない場面がある。近間で止まると相手の反撃機会になりやすい。",
+    "training": [
+      "一足一刀から面へ出て抜ける練習",
+      "面の後に二の太刀へつなげる練習",
+      "近間で止まらず離れ際に打つ練習"
+    ],
+    "goodVideo": "clips/cutouts/20260622_nagasawa_good_1.mp4",
+    "improveVideo": "clips/cutouts/20260622_nagasawa_improve_1.mp4",
+    "goodSceneStart": 55,
+    "goodSceneEnd": 70,
+    "improveSceneStart": 130,
+    "improveSceneEnd": 145,
+    "sourceVideo": "videos/20260622_永澤_赤.MP4",
+    "goodClips": [
+      {
+        "src": "clips/cutouts/20260622_nagasawa_good_1.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 55,
+        "sourceEnd": 70,
+        "note": "構えを保ちながら間合いを詰め、打突へ移る準備ができている。"
+      },
+      {
+        "src": "clips/cutouts/20260622_nagasawa_good_2.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 185,
+        "sourceEnd": 200,
+        "note": "相手を見ながら前へ出る攻めがあり、機会を作れている。"
+      }
+    ],
+    "improveClips": [
+      {
+        "src": "clips/cutouts/20260622_nagasawa_improve_1.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 130,
+        "sourceEnd": 145,
+        "note": "近間で動きが止まり、次の打突や離れ際の技につながっていない。"
+      },
+      {
+        "src": "clips/cutouts/20260622_nagasawa_improve_2.mp4",
+        "start": 0,
+        "end": 15,
+        "sourceStart": 210,
+        "sourceEnd": 225,
+        "note": "打突後の残心が弱く、一本としての説得力が不足している。"
+      }
+    ],
+    "comparison": "6月13日は打突後の残心と、攻めた後の継続が課題だった。6月22日は中段の安定と間合いの取り方が少し良くなり、前へ出る準備は見えやすい。ただし一度打って終わる場面、近間で止まる場面はまだ残っている。",
+    "ipponAnalysis": "打突機会は、相手が下がる時、構え直す時、足が止まる時にある。一本になるには、十分な気勢、正しい打突部位、竹刀の物打、踏み込み、体勢、残心が必要。永澤は構えの安定はあるが、打突後に勢いが切れると当たっても一本になりにくい。打突の強度を出しながら、二の太刀または抜けて残心まで続けることが大切。"
+  },
+  {
+    "name": "清水",
+    "tasuki": "赤タスキ",
+    "matchDate": "2026-06-13",
+    "priority": "見てから待つ時間を短くし、相手の入り際を小手・面で先に取る。",
+    "scores": {
+      "攻め": 2,
+      "間合い": 3,
+      "打突機会": 2,
+      "打突の強さ": 3,
+      "残心": 3,
+      "積極性": 2
+    },
+    "good": "相手の動きをよく見て、無理に崩れず構えを保てている。観察できる力は、出ばなを取るための大事な土台になる。",
+    "improve": "見る時間が長くなると、先に相手へ機会を渡しやすい。相手の右足が入る瞬間を合図に、小手か面へ出る形を増やしたい。",
+    "training": [
+      "相手の入り際に小手を打つ練習",
+      "止まった瞬間を面で取る練習",
+      "見てから打つまでを短くする反応練習"
+    ],
+    "goodVideo": "clips/清水_good.mp4",
+    "improveVideo": "clips/清水_improve.mp4",
+    "goodSceneStart": 36,
+    "goodSceneEnd": 50,
+    "improveSceneStart": 105,
+    "improveSceneEnd": 120,
+    "sourceVideo": "清水①.MOV"
+  },
+  {
+    "name": "中野",
+    "tasuki": "赤タスキ",
+    "matchDate": "2026-06-13",
+    "priority": "出入りのリズムを変え、入る時は剣先を残して一気に打突へつなげる。",
+    "scores": {
+      "攻め": 3,
+      "間合い": 3,
+      "打突機会": 3,
+      "打突の強さ": 3,
+      "残心": 3,
+      "積極性": 3
+    },
+    "good": "足を使って位置を取り直し、間合いを調整しようとする意識がある。場を作り直せる点は試合の中で使える強み。",
+    "improve": "同じリズムで入り続けると、相手に合わせられやすい。小さく誘って相手を出させる動きと、止まった瞬間に出る動きを使い分けたい。",
+    "training": [
+      "緩急をつけて間合いへ入る練習",
+      "小さく誘って出ばな面を打つ練習",
+      "止まった瞬間に面へ出る練習"
+    ],
+    "goodVideo": "clips/中野_good.mp4",
+    "improveVideo": "clips/中野_improve.mp4",
+    "goodSceneStart": 36,
+    "goodSceneEnd": 50,
+    "improveSceneStart": 112,
+    "improveSceneEnd": 127,
+    "sourceVideo": "中野①.MOV"
+  },
+  {
+    "name": "大賀",
+    "tasuki": "赤タスキ",
+    "matchDate": "2026-06-13",
+    "priority": "前へ出る強さを、勢いだけでなく中心と間合いで作ってから打つ。",
+    "scores": {
+      "攻め": 4,
+      "間合い": 3,
+      "打突機会": 3,
+      "打突の強さ": 4,
+      "残心": 3,
+      "積極性": 4
+    },
+    "good": "一本を取りに行く気持ちがはっきりしていて、前へ出る圧を作れる。積極的に勝負できる点は大きな長所。",
+    "improve": "遠い間合いから勢いで出ると、打突前の圧が相手に伝わり切らない。剣先で中心を押さえて半歩入ってから打ちたい。",
+    "training": [
+      "剣先で中心を押さえて半歩入る練習",
+      "遠間から勢いだけで飛ばない間合い練習",
+      "相手を動かしてから面へ出る練習"
+    ],
+    "goodVideo": "clips/大賀_good.mp4",
+    "improveVideo": "clips/大賀_improve.mp4",
+    "goodSceneStart": 38,
+    "goodSceneEnd": 53,
+    "improveSceneStart": 114,
+    "improveSceneEnd": 129,
+    "sourceVideo": "大賀.MOV"
+  },
+  {
+    "name": "西村",
+    "tasuki": "赤タスキ",
+    "matchDate": "2026-06-13",
+    "priority": "接近戦の強さを、読まれにくい小さな起こりと二の太刀につなげる。",
+    "scores": {
+      "攻め": 3,
+      "間合い": 3,
+      "打突機会": 3,
+      "打突の強さ": 3,
+      "残心": 3,
+      "積極性": 3
+    },
+    "good": "接近しても気持ちを切らさず、前で勝負できている。相手とぶつかる場面で逃げない姿勢は良い。",
+    "improve": "手元の動きが大きくなると、打ち出しを読まれやすい。左拳を中心から外さず、起こりを小さくして出ばなを取りたい。",
+    "training": [
+      "左拳を中心から外さない素振り",
+      "小さく鋭い出ばな面の練習",
+      "接近戦から二の太刀へつなげる練習"
+    ],
+    "goodVideo": "clips/西村_good.mp4",
+    "improveVideo": "clips/西村_improve.mp4",
+    "goodSceneStart": 40,
+    "goodSceneEnd": 55,
+    "improveSceneStart": 116,
+    "improveSceneEnd": 131,
+    "sourceVideo": "西村①.MOV"
+  },
+  {
+    "name": "山田",
+    "tasuki": "赤タスキ",
+    "matchDate": "2026-06-13",
+    "priority": "鍔迫り合いと離れ際を、引き技か出ばな面の機会として使う。",
+    "scores": {
+      "攻め": 3,
+      "間合い": 3,
+      "打突機会": 3,
+      "打突の強さ": 3,
+      "残心": 2,
+      "積極性": 3
+    },
+    "good": "近い間合いでも押し負けず、競り合いの中で前へ出ようとしている。接近戦に入れる気持ちは良い。",
+    "improve": "離れ際に体勢が乱れると、相手の追い込みを受けやすい。体を作ってから離れ、引き面・引き胴・中段復帰までをセットにしたい。",
+    "training": [
+      "鍔迫り合いから引き面へつなげる練習",
+      "離れ際に体勢を整えて中段へ戻る練習",
+      "接近後すぐ次の一本を選ぶ練習"
+    ],
+    "goodVideo": "clips/山田_good.mp4",
+    "improveVideo": "clips/山田_improve.mp4",
+    "goodSceneStart": 38,
+    "goodSceneEnd": 52,
+    "improveSceneStart": 110,
+    "improveSceneEnd": 125,
+    "sourceVideo": "山田①.MOV"
+  }
+]
