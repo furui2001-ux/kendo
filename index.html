@@ -246,13 +246,20 @@ function clipType(src) {
 }
 
 function clipRange(clip) {
+  const displayStart = typeof clip.sourceStart === "number" ? clip.sourceStart : clip.start;
+  const displayEnd = typeof clip.sourceEnd === "number" ? clip.sourceEnd : clip.end;
+  if (typeof displayStart !== "number" || typeof displayEnd !== "number") return "";
+  return `${displayStart.toFixed(1)}秒 - ${displayEnd.toFixed(1)}秒`;
+}
+
+function clipPlaybackRange(clip) {
   if (typeof clip.start !== "number" || typeof clip.end !== "number") return "";
   return `${clip.start.toFixed(1)}秒 - ${clip.end.toFixed(1)}秒`;
 }
 
 function clipSrc(clip) {
   const video = clip.src || clip.video;
-  const range = clipRange(clip);
+  const range = clipPlaybackRange(clip);
   return range ? `${video}#t=${clip.start},${clip.end}` : video;
 }
 
