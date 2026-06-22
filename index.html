@@ -251,8 +251,9 @@ function clipRange(clip) {
 }
 
 function clipSrc(clip) {
+  const video = clip.src || clip.video;
   const range = clipRange(clip);
-  return range ? `${clip.video}#t=${clip.start},${clip.end}` : clip.video;
+  return range ? `${video}#t=${clip.start},${clip.end}` : video;
 }
 
 function memberClips(member, kind) {
@@ -270,10 +271,11 @@ function memberClips(member, kind) {
 function videoFigure(clip, label, index) {
   const range = clipRange(clip);
   const caption = index > 1 ? `${label} ${index}` : label;
+  const video = clip.src || clip.video;
   return `
     <figure>
       <video controls loop muted playsinline preload="metadata">
-        <source src="${escapeHtml(clipSrc(clip))}" type="${escapeHtml(clipType(clip.video))}">
+        <source src="${escapeHtml(clipSrc(clip))}" type="${escapeHtml(clipType(video))}">
         お使いのブラウザでは動画を再生できません。
       </video>
       <figcaption>${escapeHtml(caption)}${range ? ` <span>(${escapeHtml(range)})</span>` : ""}${clip.note ? ` - ${escapeHtml(clip.note)}` : ""}</figcaption>
